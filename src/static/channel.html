@@ -4,6 +4,15 @@
 	<meta charset="UTF-8">
 	<title>Chatroom</title>
 	<link rel="stylesheet" href="styles/channel.css">
+	<script>
+		function sendMessage (event) {
+			event.preventDefault();
+			let messageBox = document.getElementById("message-box");
+			let message = messageBox.value;
+			alert(message);
+			document.getElementById("message-box").value = "";
+		}
+	</script>
 </head>
 <body>
 	<div id="message-list">
@@ -18,8 +27,8 @@
 		</div>
 	</div>
 	<div id="user-input">
-		<form name="message-form" id="message-form" method="post">
-			<input type="text" id="message-box" placeholder="Message" autocomplete="off">
+		<form name="message-form" id="message-form" method="post" onsubmit="return sendMessage(event);">
+			<input type="text" id="message-box" name="message" placeholder="Message" autocomplete="off">
 			<label for="message-box"></label>
 			<input type="submit" id="submit-message" value="Send">
 		</form>
