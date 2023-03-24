@@ -1,0 +1,52 @@
+html {
+    font-size: 16px;
+    background-color: #555;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+#message-list {
+    width: 100%;
+}
+
+.message {
+    width: 100%;
+
+}
+
+#user-input {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333;
+}
+
+#message-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#message-form > * {
+    background-color: #555;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    color: #bbb;
+}
+
+#message-box {
+    width: 100%;
+}
+
+#submit-message {
+    aspect-ratio: 1/1;
+}
