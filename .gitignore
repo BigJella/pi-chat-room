@@ -1,0 +1,3 @@
+# Doesn't track IDE-specific configuration files
+/.idea
+/.vs
