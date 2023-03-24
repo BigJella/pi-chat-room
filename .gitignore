@@ -1,3 +1,5 @@
 # Doesn't track IDE-specific configuration files
-/.idea
-/.vs
+.idea/
+.vs/
+__pycache__/
+venv/
